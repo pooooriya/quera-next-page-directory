@@ -1,3 +1,5 @@
+"use client";
+
 import { Food, GetMealResponse, GetSliderResponse } from "@/@types/api.types";
 import { Card } from "@/components/Basic/Card";
 import Checkout from "@/components/Basic/Checkout";
@@ -16,6 +18,9 @@ const HomePage: React.FC<HomePageProps> = ({
   sliderData,
   mealData
 }): JSX.Element => {
+  console.log(sliderData, "sliderData");
+  console.log(mealData, "mealData");
+
   const {
     state: { basket },
     dispatch
